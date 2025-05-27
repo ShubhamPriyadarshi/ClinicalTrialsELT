@@ -49,6 +49,7 @@ jobs:
           SNOWFLAKE_DATABASE: ${{ secrets.SNOWFLAKE_DATABASE }}
           SNOWFLAKE_SCHEMA: ${{ secrets.SNOWFLAKE_SCHEMA }}
         run: |
+          echo "$HOME/.snowsql" >> $GITHUB_PATH 
           echo "Connecting to Snowflake: User $SNOWFLAKE_USER, Role $SNOWFLAKE_ROLE, DB $SNOWFLAKE_DATABASE, Schema $SNOWFLAKE_SCHEMA"
           
           # Ensure schema exists or create it (optional, can be part of DDLs)
