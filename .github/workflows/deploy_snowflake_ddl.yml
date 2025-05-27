@@ -36,7 +36,7 @@ jobs:
           echo "Adding SnowSQL to PATH"
           echo "$HOME/.snowsql" >> $GITHUB_PATH
           echo "SnowSQL version:"
-          ~/.snowsql/snowsql -v
+          ~/bin/snowsql -v
         shell: bash
 
       - name: Run Snowflake DDLs
@@ -63,7 +63,7 @@ jobs:
           # Sort files to ensure ordered execution if numbering is used (e.g., 001_, 002_)
           find ddl -name '*.sql' -print0 | sort -z | while IFS= read -r -d $'\0' ddl_file; do
             echo "Executing DDL: $ddl_file"
-            ~/.snowsql/snowsql -q "!USE DATABASE IDENTIFIER('\"$SNOWFLAKE_DATABASE\"'); !USE SCHEMA IDENTIFIER('\"$SNOWFLAKE_SCHEMA\"'); !USE ROLE IDENTIFIER('\"$SNOWFLAKE_ROLE\"'); !USE WAREHOUSE IDENTIFIER('\"$SNOWFLAKE_WAREHOUSE\"'); $(cat "$ddl_file")" \
+            ~/bin/snowsql -q "!USE DATABASE IDENTIFIER('\"$SNOWFLAKE_DATABASE\"'); !USE SCHEMA IDENTIFIER('\"$SNOWFLAKE_SCHEMA\"'); !USE ROLE IDENTIFIER('\"$SNOWFLAKE_ROLE\"'); !USE WAREHOUSE IDENTIFIER('\"$SNOWFLAKE_WAREHOUSE\"'); $(cat "$ddl_file")" \
               -o exit_on_error=true \
               -o friendly=false \
               -o header=false \
