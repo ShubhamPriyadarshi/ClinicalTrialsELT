@@ -63,17 +63,4 @@ jobs:
             fi
             echo "Successfully executed $ddl_file"
             echo "------------------------------------"
-
-
-      - name: Upload artifact to SnowSQL
-        run: |
-          ~/bin/snowsql -q 'put file://'$(pwd)'/storedproc.py @~/${{ github.ref_name }} overwrite=true' -o friendly=false
-      - name: Create or update storedproc
-        run: |
-          ~/bin/snowsql -q 'CREATE OR REPLACE PROCEDURE MYPROC_'$(echo ${{ github.ref_name }} | tr . _)'(message STRING)
-                                        RETURNS STRING
-                                        LANGUAGE PYTHON
-                                        RUNTIME_VERSION = '\''3.8'\''
-                                        PACKAGES = ('\''snowflake-snowpark-python'\'')
-                                        IMPORTS = ('\''@~/${{ github.ref_name }}/storedproc.py'\'')
-                                        HANDLER = '\''storedproc.run'\'';' -o friendly=false
+           done
