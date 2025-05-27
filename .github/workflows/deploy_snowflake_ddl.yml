@@ -21,11 +21,11 @@ jobs:
       - name: Setup SnowSQL
         run: |
           echo "Downloading latest SnowSQL..."
-          curl -O https://sfc-repo.snowflakecomputing.com/snowsql/bootstrap/1.2/linux_x86_64/snowsql-latest-linux_x86_64.bash
-          chmod +x snowsql-latest-linux_x86_64.bash
+          curl -O https://sfc-repo.snowflakecomputing.com/snowsql/bootstrap/1.3/linux_x86_64/snowsql-1.4.0-linux_x86_64.bash
+          chmod +x snowsql-1.4.0-linux_x86_64.bash
           echo "Installing SnowSQL to $HOME/.snowsql..."
           # Non-interactive install to a specific directory, suppress login shell default messages
-          SNOWSQL_DEST="$HOME/.snowsql" SNOWSQL_LOGIN_SHELL_DEFAULTS=n ./snowsql-latest-linux_x86_64.bash
+          SNOWSQL_DEST="$HOME/.snowsql" SNOWSQL_LOGIN_SHELL_DEFAULTS=n ./snowsql-1.4.0-linux_x86_64.bash
           echo "Adding $HOME/.snowsql to GITHUB_PATH"
           echo "$HOME/.snowsql" >> $GITHUB_PATH
           echo "SnowSQL version:"
