@@ -1,0 +1,58 @@
+name: 'clinical_trials_dbt'
+version: '1.0.0'
+config-version: 2
+
+# This is a basic dbt project configuration.
+# For Snowflake, you'll typically define your profile in `~/.dbt/profiles.yml`
+# or use environment variables for dbt Cloud or other CI/CD setups.
+
+profile: 'default' # This should match the profile name in your profiles.yml
+
+# Define model paths, SEED paths, test paths, macro paths, snapshot paths
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+# Configure models specific to this project
+models:
+  clinical_trials_dbt:
+    # Apply tags or configurations to all models in this project
+    # example: 
+    #   materialized: view
+    staging:
+      # Configs for models under models/staging/
+      # Example: schema: raw_staging (if you want a specific schema for staging models)
+      materialized: view # Staging models are often views on top of raw data
+      +schema: staging # Creates models in <default_database>.<staging_schema> for this group
+      +tags:
+        - "staging"
+        - "source_specific"
+    marts:
+      # Configs for models under models/marts/
+      # Example: schema: analytics (if you want a specific schema for mart models)
+      materialized: table # Marts are often tables for performance
+      +schema: marts # Creates models in <default_database>.<marts_schema> for this group
+      +tags:
+        - "mart"
+        - "conformed"
+
+# You would also define sources in a .yml file within your models directory
+# e.g., models/staging/sources.yml to define where your raw tables live.
+# Example for models/staging/sources.yml:
+# version: 2
+# sources:
+#   - name: external_sources # Corresponds to SNOWFLAKE_SCHEMA in load_to_snowflake.py
+#     database: raw_db       # Corresponds to SNOWFLAKE_DATABASE in load_to_snowflake.py
+#     schema: external_sources # The schema where raw tables are loaded
+#     tables:
+#       - name: RAW_ISRCTN_TRIALS
+#       - name: RAW_EUCTR_TRIALS
+#       - name: RAW_ICTRP_TRIALS
+#       - name: RAW_EMA_TRIALS 

@@ -1,0 +1,149 @@
+<allTrials totalCount="1" xmlns="http://www.67bricks.com/isrctn"><fullTrial>
+  <trial lastUpdated="2005-11-10T00:00:00.000Z" version="17">
+    <isrctn dateAssigned="2005-11-10T00:00:00.000Z">28188789</isrctn>
+    <trialDescription thirdPartyFilesAcknowledgement="false">
+      <acknowledgment>true</acknowledgment>
+      <title>Efficacy of a new Vitamin E foam in prevention of early skin damage in patients undergoing radiotherapy</title>
+      <scientificTitle/>
+      <acronym>VEFOAM</acronym>
+      <studyHypothesis>To evaluate if a new topical formulation of Vitamin E is efficacious in the prevention of early skin damage during radiotherapy</studyHypothesis>
+      <plainEnglishSummary>Not provided at time of registration</plainEnglishSummary>
+      <primaryOutcome>1. Radiation Therapy Oncology Group (RTOG) skin score
+2. Skin damage score</primaryOutcome>
+      <secondaryOutcome>Tolerability</secondaryOutcome>
+      <trialWebsite/>
+      <ethicsApprovalRequired>Old ethics approval format</ethicsApprovalRequired>
+      <ethicsCommittees/>
+      <ethicsApproval>IRB approved study protocol in April 2004</ethicsApproval>
+    </trialDescription>
+    <externalRefs>
+      <doi>10.1186/ISRCTN28188789</doi>
+      <eudraCTNumber/>
+      <irasNumber/>
+      <clinicalTrialsGovNumber/>
+      <protocolSerialNumber>VEF03/04</protocolSerialNumber>
+    </externalRefs>
+    <trialDesign>
+      <studyDesign>Randomised parallel group Investigator blinded</studyDesign>
+      <primaryStudyDesign>Interventional</primaryStudyDesign>
+      <secondaryStudyDesign>Randomised controlled trial</secondaryStudyDesign>
+      <trialSettings>
+	<trialSetting>Not specified</trialSetting>
+      </trialSettings>
+      <trialTypes>
+	<trialType>Prevention</trialType>
+      </trialTypes>
+      <overallStatusOverride/>
+      <reasonAbandoned/>
+      <overallStartDate>2004-03-01T00:00:00.000Z</overallStartDate>
+      <overallEndDate>2005-06-01T00:00:00.000Z</overallEndDate>
+    </trialDesign>
+    <participants>
+      <recruitmentCountries>
+	<country>Italy</country>
+      </recruitmentCountries>
+      <trialCentres>
+	<trialCentre id="ec2f28c1-27a3-4447-98dc-597c17fda6c0">
+	  <name>Via A. Nota 18</name>
+	  <address/>
+	  <city>Milan</city>
+	  <state/>
+	  <country>Italy</country>
+	  <zip>20126</zip>
+	</trialCentre>
+      </trialCentres>
+      <participantTypes>
+	<participantType>Patient</participantType>
+      </participantTypes>
+      <inclusion>Patients undergoing radiotherapy for breast or thoracic cancer</inclusion>
+      <ageRange>Adult</ageRange>
+      <gender>Female</gender>
+      <targetEnrolment>80</targetEnrolment>
+      <totalFinalEnrolment/>
+      <totalTarget>80</totalTarget>
+      <exclusion>Known sensibility to topical Vitamin E</exclusion>
+      <patientInfoSheet/>
+      <recruitmentStart>2004-03-01T00:00:00.000Z</recruitmentStart>
+      <recruitmentEnd>2005-06-01T00:00:00.000Z</recruitmentEnd>
+      <recruitmentStatusOverride/>
+    </participants>
+    <conditions>
+      <condition>
+	<description>Skin damage after radiotherapy</description>
+	<diseaseClass1>Cancer</diseaseClass1>
+	<diseaseClass2>Breast</diseaseClass2>
+      </condition>
+    </conditions>
+    <interventions>
+      <intervention>
+	<description>Vitamin E foam topical application versus emollient standard cream</description>
+	<interventionType>Supplement</interventionType>
+	<pharmaceuticalStudyTypes/>
+	<phase>Not Specified</phase>
+	<drugNames>Vitamin E foam</drugNames>
+      </intervention>
+    </interventions>
+    <results>
+      <publicationPlan>Not provided at time of registration</publicationPlan>
+      <ipdSharingStatement/>
+      <dataPolicies>
+	<dataPolicy>Not provided at time of registration</dataPolicy>
+      </dataPolicies>
+      <publicationDetails/>
+      <publicationStage/>
+      <biomedRelated>true</biomedRelated>
+      <basicReport/>
+      <plainEnglishReport/>
+    </results>
+    <outputs>
+        
+      </outputs>
+    <parties>
+      <funderId>Funder14188-0</funderId>
+      <contactId>Contact51900_14188</contactId>
+      <sponsorId>Sponsor50328</sponsorId>
+    </parties>
+    <miscellaneous xmlns:ssb="http://www.67bricks.com/isrctn/functions">
+      <ipdSharingPlan>No</ipdSharingPlan>
+    </miscellaneous>
+    <attachedFiles/>
+  </trial>
+  <contact id="Contact51900_14188">
+    <title>Dr</title>
+    <forename>Massimo</forename>
+    <surname>Milani</surname>
+    <orcid/>
+    <contactTypes xmlns:ssb="http://www.67bricks.com/isrctn/functions">
+      <contactType>Scientific</contactType>
+    </contactTypes>
+    <contactDetails>
+      <address>Via A. Nota 18</address>
+      <city>Milan</city>
+      <country>Italy</country>
+      <zip>20126</zip>
+      <telephone xmlns:ssb="http://www.67bricks.com/isrctn/functions">+39 (0)253548007</telephone>
+      <email xmlns:ssb="http://www.67bricks.com/isrctn/functions">massimo.milani@mipharm.it</email>
+    </contactDetails>
+    <privacy>Public</privacy>
+  </contact>
+  <sponsor id="Sponsor50328">
+    <organisation>Mipharm (Italy)</organisation>
+    <website/>
+    <sponsorType>Industry</sponsorType>
+    <contactDetails>
+      <address>Via B. Quaranta 12</address>
+      <city>Milan</city>
+      <country>Italy</country>
+      <zip>20126</zip>
+      <telephone xmlns:ssb="http://www.67bricks.com/isrctn/functions">+39 (0)253548007</telephone>
+      <email xmlns:ssb="http://www.67bricks.com/isrctn/functions">massimo.milani@mipharm.it</email>
+    </contactDetails>
+    <privacy>Public</privacy>
+    <gridId>grid.488329.c</gridId>
+    <rorId>https://ror.org/0441v1872</rorId>
+  </sponsor>
+  <funder id="Funder14188-0">
+    <name>Mipharm SPA</name>
+    <fundRef/>
+  </funder>
+</fullTrial></allTrials>

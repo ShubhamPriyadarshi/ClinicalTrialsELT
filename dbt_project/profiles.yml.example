@@ -1,0 +1,40 @@
+# This is an example profiles.yml file for dbt.
+# Copy this to profiles.yml (in this directory or ~/.dbt/) and fill in your details.
+# Ensure this file is not committed with sensitive credentials if stored in the project.
+# For production, prefer environment variables or Airflow connections for secrets.
+
+default: # This is the profile name, referenced in dbt_project.yml
+  target: dev # Default target, can be dev, prod, etc.
+  outputs:
+    dev:
+      type: snowflake
+      account: "<your_snowflake_account_locator>" # e.g., xy12345.us-east-1
+      
+      # User/Password Authentication
+      user: "<your_snowflake_user>" # Set via env var: DBT_ENV_SECRET_SNOWFLAKE_USER or directly
+      password: "<your_snowflake_password>" # Set via env var: DBT_ENV_SECRET_SNOWFLAKE_PASSWORD or directly
+
+      # --- OR Key Pair Authentication (more secure) ---
+      # user: "<your_snowflake_user>"
+      # private_key_path: "/path/to/your/private_key.p8"
+      # private_key_passphrase: "<your_passphrase_if_any>" # Set via env var: DBT_ENV_SECRET_PRIVATE_KEY_PASSPHRASE
+
+      role: "<your_snowflake_role>"
+      warehouse: "<your_snowflake_warehouse>" # e.g., COMPUTE_WH
+      database: "<your_snowflake_database_for_dbt_models>" # e.g., ANALYTICS
+      schema: "<your_default_dbt_schema>" # e.g., DBT_USERNAME or a shared schema
+      threads: 4 # Number of concurrent threads dbt can use
+      client_session_keep_alive: False
+      # query_tag: "dbt_run"
+
+    # prod: # Example production target
+    #   type: snowflake
+    #   account: "<your_snowflake_account_locator>"
+    #   user: "<prod_snowflake_user>"
+    #   private_key_path: "/path/to/prod_private_key.p8"
+    #   private_key_passphrase: env_var('DBT_PROD_PRIVATE_KEY_PASSPHRASE')
+    #   role: "<prod_snowflake_role>"
+    #   warehouse: "<prod_snowflake_warehouse>"
+    #   database: "<prod_snowflake_database>"
+    #   schema: "<prod_dbt_schema>"
+    #   threads: 8 

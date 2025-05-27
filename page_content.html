@@ -1,0 +1,733 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <title>ICTRP Search Portal Advanced Search</title>
+    <link href="Css/StyleSheet.css" rel="stylesheet" type="text/css" />
+    
+  <style type ="text/css" >
+      <!--
+      .nounderline A {
+          text-decoration: none;
+      }
+
+      .highlight {
+          background: #89E3F6;
+      }
+
+      .highlight2 {
+          background: #92F8D0;
+      }
+      -->
+  </style>
+
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0NFGQ2PMZE"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-0NFGQ2PMZE');
+</script>
+<link href="/WebResource.axd?d=hE7CWwoNH_GTOEftHdda8uvQiIkbqz1is2yUN0eAXXzvDHE1cEcJLt0rW-LLUBvTNAbrCOTuuf4Aw3DbktsWlcCmqV5_IIxAqcgj5xnPWZdjsakKqWLmHjtV8BCWLuZm26OrFCQZ0By85mQpkdGN564JPIfCYcS8gH-Yd-8aOv41&amp;t=637602099335184922" type="text/css" rel="stylesheet" /><title>
+
+</title><style type="text/css">
+	.ctl00_Menu1_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_Menu1_1 { color:#284E98;font-family:Arial;font-size:Small;text-decoration:none; }
+	.ctl00_Menu1_2 { color:#284E98;background-color:#B5C7DE;font-family:Arial;font-size:Small;width:70%; }
+	.ctl00_Menu1_3 {  }
+	.ctl00_Menu1_4 { padding:2px 5px 2px 5px; }
+	.ctl00_Menu1_5 { background-color:Gainsboro; }
+	.ctl00_Menu1_6 {  }
+	.ctl00_Menu1_7 { padding:2px 5px 2px 5px; }
+	.ctl00_Menu1_8 { background-color:#B5C7DE; }
+	.ctl00_Menu1_9 {  }
+	.ctl00_Menu1_10 { background-color:#507CD1; }
+	.ctl00_Menu1_11 {  }
+	.ctl00_Menu1_12 { background-color:#507CD1; }
+	.ctl00_Menu1_13 { color:White; }
+	.ctl00_Menu1_14 { color:White;background-color:#284E98; }
+	.ctl00_Menu1_15 { color:White; }
+	.ctl00_Menu1_16 { color:White;background-color:#284E98; }
+
+</style></head>
+<body>
+    <form name="aspnetForm" method="post" action="./AdvSearch.aspx?Region=WPRO&amp;ReturnUrl=%7e%2fListBy.aspx%3fTypeListing%3d2" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="ctl00_ContentPlaceHolder1_ToolkitScriptManager_HiddenField" id="ctl00_ContentPlaceHolder1_ToolkitScriptManager_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=lSy4Ww84sAhdYXtQ9e6Qe-jnM8zyvY6wG2fECAo1dnHIJSvbylmh6x_xkgpdy3RrvLge5YSpMk542Dyj_YTYIPnshbbUsT2v-RMV5f7xBRo1&amp;t=638628208040000000" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=Z2ZgyHlvNhQwrK32cNCcAehZ2ASul3R_PCYKWmeiAYh-suhnR8wJrevHPL0YeelKk4Lx9sJ4MDlqqJHtnt-gnD6E0u7BxJAm3LKh2MiKwV3PCdhPj2vTHp-98D6g3ms2lWMvCcSPRC9vcco24TtSgA2&amp;t=6df849d2" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=xj_GazGgGQdjxpQEZZoJlnwnyHllLcvs3PUCDsw0A4CUn18MR9UWOULFjuZ_xAlU6cawlJM2o5s-oYIrQ3KJhim0Zn5IUSW7u8cJADBWcqC2GAllW6BGwWjAjEc7MAlYStKX3rZKVeLlUsMOewMgTA2&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=wLUdk3Kpmxajkd402fosU-jUUaRmlMvGh9NbAXU2mdJ7NipEHW1H7Js2s5iX_dLRT7qEEPWPLYtavXmwpMLRUer0nUa58_BB62hEJxqZUJITzT-pD40r80VK61XKH6mpzXOqBptRpg5Bv7C-qXQhT8XxCPlewkAcRU6q8HCDcs01&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/AdvSearch.aspx?_TSM_HiddenField_=ctl00_ContentPlaceHolder1_ToolkitScriptManager_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d3.5.40412.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aen-US%3a1547e793-5b7e-48fe-8490-03a375b13a33%3ade1feab2%3af9cec9bc%3aa67c2700%3af2c8e708%3a720a52bf%3a589eaa30%3a698129cf%3a59fb9c6f%3a8613aea7%3a3202a5a2%3aab09e3fe%3a87104b7c%3abe6fb298%3a4a2c8239" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+null;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F6350304" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="JC1bUELp0BRK2fhYEkDFJYGORtJD3vBe+/8CgLJKF+AwvBz+JJesE6PJCHn6qMyyU3dS/P9KbtfdbbKrIzClnXcLuj0cy+5iY2XiZYaAXnqXVwq8EwaphZFux8kHdD/I4MkATa4Jqomp4Oy3a9KtDtPpjsFi14lB6giAA4W1QDaexJcQpVM2PyNdPTGo1659DV6eVvj7Z0x2s/QTdygU29pA85htluFHUbx2r+1/s5wW0rjELUHXsuSjjEMl4fmzfsbWfMgr9Hvw4NpFZ1uaWrF35CIsNrhArvzQvLVtjWG+F9O9hEoIKSNb+8HZyLMJGUGfFz8gSWYSMDZXzuKNmG7CQ5rpTlxmFea0lOIKtXQMX3ihlYSQUIyxf8j8TYVpYS5c94VRTxgGjmvDnOQp+WIApcUSrBZIQytT8wBXaEBgI48Vws92Do8UXmpCOQBbPbdy843updwHOyCFuDApRSLBsrz/mclW9Oi1QmSPLtnTpgsKw/dSp1VgARB3y4KIi/O+6IRcPktiktmZwrnwbK8fF6ahlSLhL3CA1Yz2HYD0s2eALrvh2kUXy0yf2pGotSkLnIm0481aHf2B3qPCRiz5OBTT9baCQwwZav5SeVtv8JPn9UkUjMuQcDQ5jjXOiz66/8eS5CJU71bZQBUYWDh9DAQLeGgW+YUWPRWUtypL1/oab8RtFMPXMDMx7DpZDmcV24fFNTWjkTymeeewbFjLPeYCNZ1W4Ki/AVzwZgnAPIgk/eFTLuarNJTN9e1SbQEcjzRWB+0gk8Dw6NQAjA08A15/9Jmrs0KbWY9/AWqvsEt41R9nb8BOLrhuAQdGxuA0aTv1FFMyZA7OnrP09qurOiWm8exfa8Wp5JyLlZwgjumgoa0FRdYEMaocNgrIYKz/8A+yCJlZ22hGrldSSLbREQche5r38WkHBeF7utlIBqFwW1HHZs2tUJql/NhFE4q182bdINFkdxOgJzCE5EB7XiLaQeqZ476sJavPYwQ05rA3PyHhLa5Uq5pCxcquRMwvyGfbI/QzzZ1izmbRUtClRgB7/wt5jO3ipcpnGV7qL44JzZbOn5Gtr2BHoxnEUzh73lD4a4M9afevkXI/Sw==" />
+</div>
+    <div>
+         <table style="width: 100%;" align="center" bgcolor="#6BA2CC" >
+           <tr>
+                <td align="center" >
+                
+                    <table bgcolor="#6BA2CC" border="0" cellspacing="0" cellpadding="0"><tr><td valign="top"><a href="http://www.who.int/en/" target="_new"><img src="who_logo_en2.gif" alt="World Health Organization site" border="0"></a></td>
+
+</tr>
+
+</table>
+
+
+
+                </td>
+            </tr>
+          </table> 
+        <table align="center" style="color: #6ba2cc">
+          <tr>
+              <td style="height: 21px" align="center">
+                  <img alt="" src="ICTRP_logo4.jpg" style="height: 62px" /></td> 
+          </tr>  
+            </table>
+            <table bgcolor="gainsboro" bordercolor="gainsboro" cellspacing="0" class="nounderline" style="width: 100%">
+                <tr>
+                    <td>
+            <a href="#ctl00_Menu1_SkipLink"><img alt="Skip Navigation Links" src="/WebResource.axd?d=xcJNU7w2dlou18e4-Dh6Q9rpxMVThXbm5kHfk-sgIU2E8qZq0HlZMmP_ehwTkX59x5teQ0mQqaDw_-ux8Rcw9YecjJWKNogZfpBikXG7UeI1&amp;t=638628208040000000" width="0" height="0" style="border-width:0px;" /></a><table id="ctl00_Menu1" class="ctl00_Menu1_5 ctl00_Menu1_2" cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n0"><table class="ctl00_Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="ctl00_Menu1_1 ctl00_Menu1_3" href="Default.aspx">Home</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n1"><table class="ctl00_Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="ctl00_Menu1_1 ctl00_Menu1_3" href="AdvSearch.aspx">Advanced Search</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Listing By Health Topic/Regions/Countries" id="ctl00_Menu1n2"><table class="ctl00_Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="ctl00_Menu1_1 ctl00_Menu1_3" href="javascript:__doPostBack(&#39;ctl00$Menu1&#39;,&#39;List By&#39;)">List By</a></td><td style="width:0;"><img src="/WebResource.axd?d=uJ67jg4y3VmLp_IaWWmit0T87CjU7JaGMN5QSYsyv3V8CcPeFDg47s2C_WYmNW-7dR1EkZ4m2cOf3slCNv-2xpFzXp7WoKFa1O2lzbG03rvNMp-l1NA9ypM4Ym7xmGpb0&amp;t=638628208040000000" alt="Expand List By" style="border-style:none;vertical-align:middle;" /></td>
+			</tr>
+		</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n3"><table class="ctl00_Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="ctl00_Menu1_1 ctl00_Menu1_3" href="https://www.who.int/clinical-trials-registry-platform/the-ictrp-search-portal/search-tips" target="Blank">Search Tips</a></td>
+			</tr>
+		</table></td><td style="width:3px;"></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" title="Universal Trial Number (UTN)" id="ctl00_Menu1n4"><table class="ctl00_Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="ctl00_Menu1_1 ctl00_Menu1_3" href="https://trialsearch.who.int/utn.aspx">UTN</a></td><td style="width:0;"><img src="/WebResource.axd?d=uJ67jg4y3VmLp_IaWWmit0T87CjU7JaGMN5QSYsyv3V8CcPeFDg47s2C_WYmNW-7dR1EkZ4m2cOf3slCNv-2xpFzXp7WoKFa1O2lzbG03rvNMp-l1NA9ypM4Ym7xmGpb0&amp;t=638628208040000000" alt="Expand UTN" style="border-style:none;vertical-align:middle;" /></td>
+			</tr>
+		</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n5"><table class="ctl00_Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="ctl00_Menu1_1 ctl00_Menu1_3" href="http://www.who.int/ictrp" target="_blank">ICTRP website</a></td><td style="width:0;"><img src="/WebResource.axd?d=uJ67jg4y3VmLp_IaWWmit0T87CjU7JaGMN5QSYsyv3V8CcPeFDg47s2C_WYmNW-7dR1EkZ4m2cOf3slCNv-2xpFzXp7WoKFa1O2lzbG03rvNMp-l1NA9ypM4Ym7xmGpb0&amp;t=638628208040000000" alt="Expand ICTRP website" style="border-style:none;vertical-align:middle;" /></td>
+			</tr>
+		</table></td><td onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n6"><table class="ctl00_Menu1_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td style="white-space:nowrap;"><a class="ctl00_Menu1_1 ctl00_Menu1_3" href="Contact.aspx">Contact us</a></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><div id="ctl00_Menu1n2Items" class="ctl00_Menu1_0 ctl00_Menu1_8">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n7">
+			<td><table class="ctl00_Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_Menu1_1 ctl00_Menu1_6" href="ListBy.aspx?TypeListing=0">List By Health Topic</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n8">
+			<td><table class="ctl00_Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_Menu1_1 ctl00_Menu1_6" href="ListBy.aspx?TypeListing=1">List By Countries</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n9">
+			<td><table class="ctl00_Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_Menu1_1 ctl00_Menu1_6" href="ListBy.aspx?TypeListing=2">List By Regions/Countries</a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="ctl00_Menu1_7 ctl00_Menu1_0" id="ctl00_Menu1n2ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="/WebResource.axd?d=-LgYthJjkX0q27dKuablfmK-LRaCS8FET4PNgJ8mRx1tP6ZZOTtXs97ovRSnw0ikxa1crRkpT5X4ERS7pMkyK2ng-r_iZnEhBxzvMWYPyphUet_9xLWck4ZO5EEkykIL0&amp;t=638628208040000000" alt="Scroll up" />
+	</div><div class="ctl00_Menu1_7 ctl00_Menu1_0" id="ctl00_Menu1n2ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="/WebResource.axd?d=Gz028kRe4z9L7lCBZ2KMYhlSHXYJ2QF_yYpbhxhRjuyYb9qZHwotewN8vqF4baSyi8Iihjo0IzIixKUQStfb6azV1_5K79Geox_9WDabwCikN0Oi3ILgG13_exPc24JR0&amp;t=638628208040000000" alt="Scroll down" />
+	</div>
+</div><div id="ctl00_Menu1n4Items" class="ctl00_Menu1_0 ctl00_Menu1_8">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n10">
+			<td><table class="ctl00_Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_Menu1_1 ctl00_Menu1_6" href="https://trialsearch.who.int/utn.aspx">UTN request</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n11">
+			<td><table class="ctl00_Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_Menu1_1 ctl00_Menu1_6" href="utnvalid.aspx">UTN validation</a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="ctl00_Menu1_7 ctl00_Menu1_0" id="ctl00_Menu1n4ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="/WebResource.axd?d=-LgYthJjkX0q27dKuablfmK-LRaCS8FET4PNgJ8mRx1tP6ZZOTtXs97ovRSnw0ikxa1crRkpT5X4ERS7pMkyK2ng-r_iZnEhBxzvMWYPyphUet_9xLWck4ZO5EEkykIL0&amp;t=638628208040000000" alt="Scroll up" />
+	</div><div class="ctl00_Menu1_7 ctl00_Menu1_0" id="ctl00_Menu1n4ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="/WebResource.axd?d=Gz028kRe4z9L7lCBZ2KMYhlSHXYJ2QF_yYpbhxhRjuyYb9qZHwotewN8vqF4baSyi8Iihjo0IzIixKUQStfb6azV1_5K79Geox_9WDabwCikN0Oi3ILgG13_exPc24JR0&amp;t=638628208040000000" alt="Scroll down" />
+	</div>
+</div><div id="ctl00_Menu1n5Items" class="ctl00_Menu1_0 ctl00_Menu1_8">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n12">
+			<td><table class="ctl00_Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_Menu1_1 ctl00_Menu1_6" href="http://www.who.int/ictrp" target="_blank">In English</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n13">
+			<td><table class="ctl00_Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_Menu1_1 ctl00_Menu1_6" href="http://www.who.int/ictrp/fr" target="_blank">In French</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n14">
+			<td><table class="ctl00_Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_Menu1_1 ctl00_Menu1_6" href="http://www.who.int/ictrp/es" target="_blank">In Spanish</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n15">
+			<td><table class="ctl00_Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_Menu1_1 ctl00_Menu1_6" href="http://www.who.int/ictrp/ar" target="_blank">In Arabic</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n16">
+			<td><table class="ctl00_Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_Menu1_1 ctl00_Menu1_6" href="http://www.who.int/ictrp/zh" target="_blank">In Chinese</a></td>
+				</tr>
+			</table></td>
+		</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_Menu1n17">
+			<td><table class="ctl00_Menu1_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_Menu1_1 ctl00_Menu1_6" href="http://www.who.int/ictrp/ru" target="_blank">In Russian</a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div class="ctl00_Menu1_7 ctl00_Menu1_0" id="ctl00_Menu1n5ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="/WebResource.axd?d=-LgYthJjkX0q27dKuablfmK-LRaCS8FET4PNgJ8mRx1tP6ZZOTtXs97ovRSnw0ikxa1crRkpT5X4ERS7pMkyK2ng-r_iZnEhBxzvMWYPyphUet_9xLWck4ZO5EEkykIL0&amp;t=638628208040000000" alt="Scroll up" />
+	</div><div class="ctl00_Menu1_7 ctl00_Menu1_0" id="ctl00_Menu1n5ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+		<img src="/WebResource.axd?d=Gz028kRe4z9L7lCBZ2KMYhlSHXYJ2QF_yYpbhxhRjuyYb9qZHwotewN8vqF4baSyi8Iihjo0IzIixKUQStfb6azV1_5K79Geox_9WDabwCikN0Oi3ILgG13_exPc24JR0&amp;t=638628208040000000" alt="Scroll down" />
+	</div>
+</div><a id="ctl00_Menu1_SkipLink"></a>
+
+        </td>
+                </tr>                
+                
+            </table>
+        
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitScriptManager', 'aspnetForm', ['tctl00$ContentPlaceHolder1$UpdatePanel12','','tctl00$ContentPlaceHolder1$UpdatePanel5',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+ 
+  <div style="top: 50%;left: 50%;position:fixed;margin-top:-100px;margin-left:-100px;">
+    <img src="images/ajax_loader_blue.gif" id="ImgLoading" style="width:200px;height:200px;display:none;" />
+  </div>
+  
+        
+        <table style="width: 100%">
+            
+            <tr valign="top">
+                <td class="TabArea" style="width: 421px" > <input type="submit" name="ctl00$ContentPlaceHolder1$btnBackSearch" value="Back to Search" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btnBackSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ContentPlaceHolder1_btnBackSearch" />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    
+                    <td align="center">  &nbsp;<span id="ctl00_ContentPlaceHolder1_lblCount" style="color:Black;font-family:Arial;font-size:Small;font-weight:normal;text-align: left">326894 records for 285935 trials found!</span>
+                       
+                                    <div id="ctl00_ContentPlaceHolder1_Panel13" class="popupControl" style="background-color:infobackground;border-width:1px;border-style:Solid;">
+	
+                            <div id="ctl00_ContentPlaceHolder1_UpdatePanel12">
+		
+                                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;"  >
+                                        <tr>
+                                            <td style="font-size: x-small; vertical-align: top; text-align:left; font-family: Arial;">
+                                                Trials are sometimes recorded in more than one registry. 
+                                                These records can refer to each other using the 'Secondary ID' field. 
+                                                The search portal uses these Secondary IDs to group records about the same trial together in the search results. <br />
+                                                Each group of records referring to a trial is displayed in table that is seen by pressing the + symbol. 
+                                                The record with the earliest date of registration is always shown first.
+</td>
+                                        </tr>
+                                    </table>
+                                
+	</div>
+                                  
+</div>
+                            
+                  </td>
+                   <td style="text-align: right;">
+                 
+                  </td>  
+                    <tr valign="top">
+                        <td class="TabArea" style="width: 421px">
+                
+                            &nbsp;
+                     <div id="ctl00_ContentPlaceHolder1_Panel11" class="popupControl" style="background-color:infobackground;">
+	
+                         &nbsp;
+</div>
+                            &nbsp;
+                    
+                    </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td style="text-align: right">
+                            </td>
+                    </tr>
+                     <tr valign="top">
+                        <td class="TabArea" style="width: 421px">
+                    </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td style="text-align: right" valign="bottom">
+                            <span id="ctl00_ContentPlaceHolder1_Label33" style="font-family:Arial;font-size:X-Small;font-weight:normal;">Show</span><select name="ctl00$ContentPlaceHolder1$ddlPageSize" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder1$ddlPageSize\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ContentPlaceHolder1_ddlPageSize" style="font-family:Arial;font-size:X-Small;">
+	<option selected="selected" value="10">10</option>
+	<option value="20">20</option>
+	<option value="50">50</option>
+	<option value="100">100</option>
+
+</select><span id="ctl00_ContentPlaceHolder1_Label34" style="font-family:Arial;font-size:X-Small;font-weight:normal;">records per page</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                            <input type="submit" name="ctl00$ContentPlaceHolder1$btnLaunchDialogTerms" value="Export results to XML" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btnLaunchDialogTerms&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ContentPlaceHolder1_btnLaunchDialogTerms" style="color:Blue;background-color:#E0E0E0;border-color:Red;border-style:Solid;font-size:X-Small;width:173px;" />
+                        </td>
+                    </tr>
+              
+        </table>
+                         
+            <table style="width: 100%">
+            <tr><td>
+                <div id="ctl00_ContentPlaceHolder1_UpdatePanel5">
+	
+                        <a id="ctl00_ContentPlaceHolder1_lnkButExtendSynonyms" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$lnkButExtendSynonyms&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))" style="font-family:Arial;font-size:Small;">Display synonyms</a>
+                        
+                    
+</div>                
+                <br />  
+                <table id="ctl00_ContentPlaceHolder1_dlPager2" cellspacing="0" cellpadding="10" align="Center" border="0" style="font-family:Arial;font-size:Small;border-collapse:collapse;">
+	<tr>
+		<td>
+                      <a id="ctl00_ContentPlaceHolder1_dlPager2_ctl00_lnkPageNo" disabled="disabled">1</a>
+                   </td><td>
+                      <a id="ctl00_ContentPlaceHolder1_dlPager2_ctl01_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager2$ctl01$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">2</a>
+                   </td><td>
+                      <a id="ctl00_ContentPlaceHolder1_dlPager2_ctl02_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager2$ctl02$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">3</a>
+                   </td><td>
+                      <a id="ctl00_ContentPlaceHolder1_dlPager2_ctl03_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager2$ctl03$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">4</a>
+                   </td><td>
+                      <a id="ctl00_ContentPlaceHolder1_dlPager2_ctl04_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager2$ctl04$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">5</a>
+                   </td><td>
+                      <a id="ctl00_ContentPlaceHolder1_dlPager2_ctl05_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager2$ctl05$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">6</a>
+                   </td><td>
+                      <a id="ctl00_ContentPlaceHolder1_dlPager2_ctl06_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager2$ctl06$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">7</a>
+                   </td><td>
+                      <a id="ctl00_ContentPlaceHolder1_dlPager2_ctl07_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager2$ctl07$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">8</a>
+                   </td><td>
+                      <a id="ctl00_ContentPlaceHolder1_dlPager2_ctl08_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager2$ctl08$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">9</a>
+                   </td><td>
+                      <a id="ctl00_ContentPlaceHolder1_dlPager2_ctl09_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager2$ctl09$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">10</a>
+                   </td><td>
+                      <a id="ctl00_ContentPlaceHolder1_dlPager2_ctl10_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager2$ctl10$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Last</a>
+                   </td>
+	</tr>
+</table>               
+                 <div>
+	<table cellspacing="0" cellpadding="4" border="0" id="ctl00_ContentPlaceHolder1_GridViewSearch" style="color:#333333;font-size:Small;width:100%;border-collapse:collapse;left: 26px; font-family: Arial;
+                                top: 262px;">
+		<tr style="color:White;background-color:#507CD1;font-weight:bold;">
+			<th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$GridViewSearch&#39;,&#39;Sort$Recruitment_status_code&#39;)" style="color:White;">Recruitment status</a></th><th scope="col">Prospective Registration</th><th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$GridViewSearch&#39;,&#39;Sort$TrialID&#39;)" style="color:White;">Main ID</a></th><th scope="col">&nbsp;</th><th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$GridViewSearch&#39;,&#39;Sort$Public_title&#39;)" style="color:White;">Public Title</a></th><th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$GridViewSearch&#39;,&#39;Sort$Date_registration3&#39;)" style="color:White;">Date of Registration</a></th><th scope="col"><a href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$GridViewSearch&#39;,&#39;Sort$results_yes_no&#39;)" style="color:White;">Results available</a></th>
+		</tr><tr valign="top" style="background-color:#EFF3FB;">
+			<td style="width:100px;">Not Recruiting</td><td style="width:100px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl02_lblRetrospectiveGrid">Yes</span></td><td style="width:200px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl02_Label1">ACTRN12625000440426</span></td><td>
+                                            <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl02_pnlIconPlus" disabled="disabled" class="collapsePanelHeader" style="width:100%;">
+				
+                                            
+			</div>
+                                        </td><td align="left" style="width:700px;">
+                                    
+                                                 <a id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl02_HyperLink2" href="Trial2.aspx?TrialID=ACTRN12625000440426" target="_blank">ACCESS-AID Study – Accelerating Care, Capacity & Equity in Automated Insulin Delivery (AID) Systems for New Zealanders with Type 1 Diabetes</a>
+                                        <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl02_pnlGridTrialID" class="collapsePanel">
+				
+                                            <div>
+
+				</div>
+                                             
+
+                                        
+			</div>
+                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$GridViewSearch$ctl02$CollapsiblePanelExtender1_ClientState" id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl02_CollapsiblePanelExtender1_ClientState" /></td><td style="width:100px;">2025-05-12</td><td>&nbsp;</td>
+		</tr><tr valign="top" style="background-color:White;">
+			<td style="width:100px;">Not Recruiting</td><td style="width:100px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl03_lblRetrospectiveGrid">Yes</span></td><td style="width:200px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl03_Label1">ACTRN12625000441415</span></td><td>
+                                            <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl03_pnlIconPlus" disabled="disabled" class="collapsePanelHeader" style="width:100%;">
+				
+                                            
+			</div>
+                                        </td><td align="left" style="width:700px;">
+                                    
+                                                 <a id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl03_HyperLink2" href="Trial2.aspx?TrialID=ACTRN12625000441415" target="_blank">Silicone gel for skin protection in the most vulnerable newborns</a>
+                                        <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl03_pnlGridTrialID" class="collapsePanel">
+				
+                                            <div>
+
+				</div>
+                                             
+
+                                        
+			</div>
+                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$GridViewSearch$ctl03$CollapsiblePanelExtender1_ClientState" id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl03_CollapsiblePanelExtender1_ClientState" /></td><td style="width:100px;">2025-05-12</td><td>&nbsp;</td>
+		</tr><tr valign="top" style="background-color:#EFF3FB;">
+			<td style="width:100px;">Not Recruiting</td><td style="width:100px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl04_lblRetrospectiveGrid">Yes</span></td><td style="width:200px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl04_Label1">ACTRN12625000437460</span></td><td>
+                                            <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl04_pnlIconPlus" disabled="disabled" class="collapsePanelHeader" style="width:100%;">
+				
+                                            
+			</div>
+                                        </td><td align="left" style="width:700px;">
+                                    
+                                                 <a id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl04_HyperLink2" href="Trial2.aspx?TrialID=ACTRN12625000437460" target="_blank">EMVision emu™ Brain Scanner on Acute Stroke and Intracranial Haemorrhage</a>
+                                        <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl04_pnlGridTrialID" class="collapsePanel">
+				
+                                            <div>
+
+				</div>
+                                             
+
+                                        
+			</div>
+                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$GridViewSearch$ctl04$CollapsiblePanelExtender1_ClientState" id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl04_CollapsiblePanelExtender1_ClientState" /></td><td style="width:100px;">2025-05-12</td><td>&nbsp;</td>
+		</tr><tr valign="top" style="background-color:White;">
+			<td style="width:100px;">Not Recruiting</td><td style="width:100px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl05_lblRetrospectiveGrid">Yes</span></td><td style="width:200px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl05_Label1">ACTRN12625000439448</span></td><td>
+                                            <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl05_pnlIconPlus" disabled="disabled" class="collapsePanelHeader" style="width:100%;">
+				
+                                            
+			</div>
+                                        </td><td align="left" style="width:700px;">
+                                    
+                                                 <a id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl05_HyperLink2" href="Trial2.aspx?TrialID=ACTRN12625000439448" target="_blank">Feasibility of Pulsenmore’s home ultrasound technology in monitoring high-risk pregnancies</a>
+                                        <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl05_pnlGridTrialID" class="collapsePanel">
+				
+                                            <div>
+
+				</div>
+                                             
+
+                                        
+			</div>
+                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$GridViewSearch$ctl05$CollapsiblePanelExtender1_ClientState" id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl05_CollapsiblePanelExtender1_ClientState" /></td><td style="width:100px;">2025-05-12</td><td>&nbsp;</td>
+		</tr><tr valign="top" style="background-color:#EFF3FB;">
+			<td style="width:100px;">Not Recruiting</td><td style="width:100px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl06_lblRetrospectiveGrid">Yes</span></td><td style="width:200px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl06_Label1">ACTRN12625000442404</span></td><td>
+                                            <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl06_pnlIconPlus" disabled="disabled" class="collapsePanelHeader" style="width:100%;">
+				
+                                            
+			</div>
+                                        </td><td align="left" style="width:700px;">
+                                    
+                                                 <a id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl06_HyperLink2" href="Trial2.aspx?TrialID=ACTRN12625000442404" target="_blank">Feasibility of emergency department UltraSound-Guided peripheral intravenous catheter insertion training with Virtual Reality: a pilot Randomised Control Trial</a>
+                                        <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl06_pnlGridTrialID" class="collapsePanel">
+				
+                                            <div>
+
+				</div>
+                                             
+
+                                        
+			</div>
+                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$GridViewSearch$ctl06$CollapsiblePanelExtender1_ClientState" id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl06_CollapsiblePanelExtender1_ClientState" /></td><td style="width:100px;">2025-05-12</td><td>&nbsp;</td>
+		</tr><tr valign="top" style="background-color:White;">
+			<td style="width:100px;">Not Recruiting</td><td style="width:100px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl07_lblRetrospectiveGrid">No</span></td><td style="width:200px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl07_Label1">ISRCTN30082181</span></td><td>
+                                            <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl07_pnlIconPlus" disabled="disabled" class="collapsePanelHeader" style="width:100%;">
+				
+                                            
+			</div>
+                                        </td><td align="left" style="width:700px;">
+                                    
+                                                 <a id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl07_HyperLink2" href="Trial2.aspx?TrialID=ISRCTN30082181" target="_blank">Feasibility and advantages of using more comfortable combined injection technology in the treatment of deciduous molars</a>
+                                        <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl07_pnlGridTrialID" class="collapsePanel">
+				
+                                            <div>
+
+				</div>
+                                             
+
+                                        
+			</div>
+                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$GridViewSearch$ctl07$CollapsiblePanelExtender1_ClientState" id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl07_CollapsiblePanelExtender1_ClientState" /></td><td style="width:100px;">2025-05-12</td><td>Yes</td>
+		</tr><tr valign="top" style="background-color:#EFF3FB;">
+			<td style="width:100px;">Not Recruiting</td><td style="width:100px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl08_lblRetrospectiveGrid">Yes</span></td><td style="width:200px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl08_Label1">ACTRN12625000443493</span></td><td>
+                                            <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl08_pnlIconPlus" disabled="disabled" class="collapsePanelHeader" style="width:100%;">
+				
+                                            
+			</div>
+                                        </td><td align="left" style="width:700px;">
+                                    
+                                                 <a id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl08_HyperLink2" href="Trial2.aspx?TrialID=ACTRN12625000443493" target="_blank">ScreenEQUAL: Informed Cervical Screening Participation for People with Intellectual Disability</a>
+                                        <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl08_pnlGridTrialID" class="collapsePanel">
+				
+                                            <div>
+
+				</div>
+                                             
+
+                                        
+			</div>
+                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$GridViewSearch$ctl08$CollapsiblePanelExtender1_ClientState" id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl08_CollapsiblePanelExtender1_ClientState" /></td><td style="width:100px;">2025-05-12</td><td>&nbsp;</td>
+		</tr><tr valign="top" style="background-color:White;">
+			<td style="width:100px;">Not Recruiting</td><td style="width:100px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl09_lblRetrospectiveGrid">Yes</span></td><td style="width:200px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl09_Label1">ACTRN12625000438459</span></td><td>
+                                            <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl09_pnlIconPlus" disabled="disabled" class="collapsePanelHeader" style="width:100%;">
+				
+                                            
+			</div>
+                                        </td><td align="left" style="width:700px;">
+                                    
+                                                 <a id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl09_HyperLink2" href="Trial2.aspx?TrialID=ACTRN12625000438459" target="_blank">A Centralized Platform study for Functional High Risk Multiple Myeloma: Domain 1</a>
+                                        <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl09_pnlGridTrialID" class="collapsePanel">
+				
+                                            <div>
+
+				</div>
+                                             
+
+                                        
+			</div>
+                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$GridViewSearch$ctl09$CollapsiblePanelExtender1_ClientState" id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl09_CollapsiblePanelExtender1_ClientState" /></td><td style="width:100px;">2025-05-12</td><td>&nbsp;</td>
+		</tr><tr valign="top" style="background-color:#EFF3FB;">
+			<td style="width:100px;">Not Recruiting</td><td style="width:100px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl10_lblRetrospectiveGrid">Yes</span></td><td style="width:200px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl10_Label1">ACTRN12625000429459</span></td><td>
+                                            <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl10_pnlIconPlus" disabled="disabled" class="collapsePanelHeader" style="width:100%;">
+				
+                                            
+			</div>
+                                        </td><td align="left" style="width:700px;">
+                                    
+                                                 <a id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl10_HyperLink2" href="Trial2.aspx?TrialID=ACTRN12625000429459" target="_blank">A Centralized Platform study for Functional High Risk Multiple Myeloma - Master Protocol</a>
+                                        <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl10_pnlGridTrialID" class="collapsePanel">
+				
+                                            <div>
+
+				</div>
+                                             
+
+                                        
+			</div>
+                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$GridViewSearch$ctl10$CollapsiblePanelExtender1_ClientState" id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl10_CollapsiblePanelExtender1_ClientState" /></td><td style="width:100px;">2025-05-09</td><td>&nbsp;</td>
+		</tr><tr valign="top" style="background-color:White;">
+			<td style="width:100px;">Recruiting</td><td style="width:100px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl11_lblRetrospectiveGrid">No</span></td><td style="width:200px;"><span id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl11_Label1">ACTRN12625000432415</span></td><td>
+                                            <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl11_pnlIconPlus" disabled="disabled" class="collapsePanelHeader" style="width:100%;">
+				
+                                            
+			</div>
+                                        </td><td align="left" style="width:700px;">
+                                    
+                                                 <a id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl11_HyperLink2" href="Trial2.aspx?TrialID=ACTRN12625000432415" target="_blank">AI scribe for clinical documentation</a>
+                                        <div id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl11_pnlGridTrialID" class="collapsePanel">
+				
+                                            <div>
+
+				</div>
+                                             
+
+                                        
+			</div>
+                                        <input type="hidden" name="ctl00$ContentPlaceHolder1$GridViewSearch$ctl11$CollapsiblePanelExtender1_ClientState" id="ctl00_ContentPlaceHolder1_GridViewSearch_ctl11_CollapsiblePanelExtender1_ClientState" /></td><td style="width:100px;">2025-05-09</td><td>&nbsp;</td>
+		</tr><tr align="right" style="color:White;background-color:#507CD1;font-weight:bold;">
+			<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td></td><td>&nbsp;</td><td>&nbsp;</td>
+		</tr>
+	</table>
+</div>
+                            <table id="ctl00_ContentPlaceHolder1_dlPager" cellspacing="0" cellpadding="10" align="Center" border="0" style="font-family:Arial;font-size:Small;border-collapse:collapse;">
+	<tr>
+		<td>
+                                   <a id="ctl00_ContentPlaceHolder1_dlPager_ctl00_lnkPageNo" disabled="disabled">1</a>
+                                </td><td>
+                                   <a id="ctl00_ContentPlaceHolder1_dlPager_ctl01_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager$ctl01$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">2</a>
+                                </td><td>
+                                   <a id="ctl00_ContentPlaceHolder1_dlPager_ctl02_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager$ctl02$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">3</a>
+                                </td><td>
+                                   <a id="ctl00_ContentPlaceHolder1_dlPager_ctl03_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager$ctl03$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">4</a>
+                                </td><td>
+                                   <a id="ctl00_ContentPlaceHolder1_dlPager_ctl04_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager$ctl04$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">5</a>
+                                </td><td>
+                                   <a id="ctl00_ContentPlaceHolder1_dlPager_ctl05_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager$ctl05$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">6</a>
+                                </td><td>
+                                   <a id="ctl00_ContentPlaceHolder1_dlPager_ctl06_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager$ctl06$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">7</a>
+                                </td><td>
+                                   <a id="ctl00_ContentPlaceHolder1_dlPager_ctl07_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager$ctl07$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">8</a>
+                                </td><td>
+                                   <a id="ctl00_ContentPlaceHolder1_dlPager_ctl08_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager$ctl08$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">9</a>
+                                </td><td>
+                                   <a id="ctl00_ContentPlaceHolder1_dlPager_ctl09_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager$ctl09$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">10</a>
+                                </td><td>
+                                   <a id="ctl00_ContentPlaceHolder1_dlPager_ctl10_lnkPageNo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$dlPager$ctl10$lnkPageNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Last</a>
+                                </td>
+	</tr>
+</table>
+              </td>
+            </tr>
+        </table>
+            <div id="ctl00_ContentPlaceHolder1_PanelTermsAndConditions" class="modalPopup" style="background-color:White;font-family:Arial;font-size:Small;width:750px;display: none">
+	 
+                      <div style="top: 50%;left: 50%;position:fixed;margin-top:-100px;margin-left:-100px;">
+                        <img src="images/ajax_loader_blue.gif" id="ImgLoadingExportXML" style="width: 200px;height: 200px; display:none;" />
+                      </div>
+     
+                   <p style=" font-weight:bold ">Terms and Conditions for Use of WHO ICTRP Data</p>
+                   <p>1. Introduction<br />
+                   The following Terms and Conditions apply for use of the WHO ICTRP data. 
+                   Downloading the WHO ICTRP data indicates your acceptance of the following Terms and Conditions. 
+                   These Terms and Conditions apply to all data obtained from the WHO ICTRP , 
+                   independent of format and method of acquisition.<br />
+                   2. WHO ICTRP Database<br />
+                   The World Health Organization, through its International Clinical Trials Registry Platform, 
+                   has developed the ICTRP database to provide patients, family members and members of the 
+                   public current information about clinical research studies. The ICTRP database contains 
+                   information about clinical trials being conducted throughout the world. 
+                   This data is provided to the ICTRP by registries conforming to WHO standards. 
+                   ICTRP is updated weekly. Trial data posted on this search portal are not endorsed by WHO, 
+                   but are provided as a service to our users. In no event shall the World Health Organization 
+                   be liable for any damages arising from the use of the  data in the ICTRP database. 
+                   None of the information obtained through use of the search portal should in any way be used 
+                   in clinical care without consulting a physician or licensed health professional. 
+                   WHO is not responsible for the accuracy, completeness and/or use made of the content displayed 
+                   for any trial record.<br />
+                   3. Availability<br />
+                   ICTRP data are publicly available to all requesters, at no charge.<br />
+                   4. Use of ICTRP Data<br />
+                   a. Neither the WHO ICTRP, nor any of its data providers, make any warranties, expressed or implied, 
+                   with respect to data contained in the database, and, furthermore, assume no liability for any party's use, 
+                   or the results of such use, of any part of the database.<br /> 
+                   b. In any publication or distribution of these data (1) you should, to the extent possible and appropriate, attribute the source of the data as WHO ICTRP; 
+                   (2) you should update the data such that they are current at all times; (3) you should clearly display the date 
+                   the data were processed by WHO ICTRP;<br />  
+                   c. You shall not assert any proprietary rights to any portion of the ICTRP database.<br />
+                   d. You shall not use information extracted from the ICTRP database for marketing, promotional or commercial purposes.<br />
+                   e. You shall not use the name or emblem of WHO in association with the use of data from the ICTRP database.<br />
+                   These terms and conditions are in effect as long as the user retains any of the data obtained from the WHO ICTRP database . 
+ 
+
+                   
+                   </p>
+                   
+                           <input type="submit" name="ctl00$ContentPlaceHolder1$btnExport" value="I agree" onclick="document.getElementById(&#39;ImgLoadingExportXML&#39;).style.display=&#39;block&#39;;WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btnExport&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ContentPlaceHolder1_btnExport" style="width:77px;" />
+                           <input type="submit" name="ctl00$ContentPlaceHolder1$btnCancel" value="No thanks" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btnCancel&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ContentPlaceHolder1_btnCancel" style="width:77px;" />
+                      
+                            
+</div>
+    
+    
+    <table align=center width="100%"   >
+                <tr>
+                    <td style="border-top: #6ba2cc thick solid"  >
+                        <span id="ctl00_ContentPlaceHolder1_Label31" style="display:inline-block;font-family:Arial;font-size:X-Small;font-weight:normal;width:100%;">Disclaimer: Trials posted on this search portal are not endorsed by WHO, but are provided as a service to our users. In no event shall the World Health Organization be liable for any damages arising from the use of the information linked to in this section. None of the information obtained through use of the search portal should in any way be used in clinical care without consulting a physician or licensed health professional. WHO is not responsible for the accuracy, completeness and/or use made of the content displayed for any trial record.</span></td>
+                </tr>
+                <tr>
+                
+                        <td align="center">
+                            <a id="ctl00_ContentPlaceHolder1_HyperLink8" href="http://www.who.int/about/copyright/en/" target="_blank" style="font-family:Arial;font-size:X-Small;font-weight:bold;text-align: center">Copyright - World Health Organization</a>
+                            <span id="ctl00_ContentPlaceHolder1_Label32" style="font-family:Arial;font-size:X-Small;font-weight:bold;">- Version 3.6 -</span>
+                            <a id="ctl00_ContentPlaceHolder1_HyperLink6" href="ICTRP_Revisions_document.pdf" target="_blank" style="font-family:Arial;font-size:X-Small;font-weight:bold;text-align: center">Version history</a> <span style="font-size: 0.6rem"> Please fill this short </span>
+                            <a id="ctl00_ContentPlaceHolder1_HyperLink9" href="https://extranet.who.int/dataformv6/index.php/336694?lang=en " target="_blank" style="font-family:Arial;font-size:X-Small;font-weight:bold;text-align: center">user satisfaction survey</a>
+
+                        </td>
+            
+               </tr>
+   
+    </table>  
+       
+    </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("ctl00_ContentPlaceHolder1_ToolkitScriptManager_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();var ctl00_Menu1_Data = new Object();
+ctl00_Menu1_Data.disappearAfter = 500;
+ctl00_Menu1_Data.horizontalOffset = 2;
+ctl00_Menu1_Data.verticalOffset = 0;
+ctl00_Menu1_Data.hoverClass = 'ctl00_Menu1_16';
+ctl00_Menu1_Data.hoverHyperLinkClass = 'ctl00_Menu1_15';
+ctl00_Menu1_Data.staticHoverClass = 'ctl00_Menu1_14';
+ctl00_Menu1_Data.staticHoverHyperLinkClass = 'ctl00_Menu1_13';
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","CancelControlID":"ctl00_ContentPlaceHolder1_btnCancel","DropShadow":true,"PopupControlID":"ctl00_ContentPlaceHolder1_PanelTermsAndConditions","dynamicServicePath":"/AdvSearch.aspx","id":"ctl00_ContentPlaceHolder1_ModalPopupExtender2"}, null, null, $get("ctl00_ContentPlaceHolder1_btnLaunchDialogTerms"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl02_CollapsiblePanelExtender1_ClientState","CollapseControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl02_pnlIconPlus","Collapsed":true,"CollapsedImage":"images/plus.gif","CollapsedText":"Show related records","ExpandControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl02_pnlIconPlus","ExpandedImage":"images/minus.gif","ExpandedText":"Hide related records","ImageControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl02_ImgPlus","SuppressPostBack":true,"id":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl02_CollapsiblePanelExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_GridViewSearch_ctl02_pnlGridTrialID"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl03_CollapsiblePanelExtender1_ClientState","CollapseControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl03_pnlIconPlus","Collapsed":true,"CollapsedImage":"images/plus.gif","CollapsedText":"Show related records","ExpandControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl03_pnlIconPlus","ExpandedImage":"images/minus.gif","ExpandedText":"Hide related records","ImageControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl03_ImgPlus","SuppressPostBack":true,"id":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl03_CollapsiblePanelExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_GridViewSearch_ctl03_pnlGridTrialID"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl04_CollapsiblePanelExtender1_ClientState","CollapseControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl04_pnlIconPlus","Collapsed":true,"CollapsedImage":"images/plus.gif","CollapsedText":"Show related records","ExpandControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl04_pnlIconPlus","ExpandedImage":"images/minus.gif","ExpandedText":"Hide related records","ImageControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl04_ImgPlus","SuppressPostBack":true,"id":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl04_CollapsiblePanelExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_GridViewSearch_ctl04_pnlGridTrialID"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl05_CollapsiblePanelExtender1_ClientState","CollapseControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl05_pnlIconPlus","Collapsed":true,"CollapsedImage":"images/plus.gif","CollapsedText":"Show related records","ExpandControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl05_pnlIconPlus","ExpandedImage":"images/minus.gif","ExpandedText":"Hide related records","ImageControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl05_ImgPlus","SuppressPostBack":true,"id":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl05_CollapsiblePanelExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_GridViewSearch_ctl05_pnlGridTrialID"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl06_CollapsiblePanelExtender1_ClientState","CollapseControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl06_pnlIconPlus","Collapsed":true,"CollapsedImage":"images/plus.gif","CollapsedText":"Show related records","ExpandControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl06_pnlIconPlus","ExpandedImage":"images/minus.gif","ExpandedText":"Hide related records","ImageControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl06_ImgPlus","SuppressPostBack":true,"id":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl06_CollapsiblePanelExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_GridViewSearch_ctl06_pnlGridTrialID"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl07_CollapsiblePanelExtender1_ClientState","CollapseControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl07_pnlIconPlus","Collapsed":true,"CollapsedImage":"images/plus.gif","CollapsedText":"Show related records","ExpandControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl07_pnlIconPlus","ExpandedImage":"images/minus.gif","ExpandedText":"Hide related records","ImageControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl07_ImgPlus","SuppressPostBack":true,"id":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl07_CollapsiblePanelExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_GridViewSearch_ctl07_pnlGridTrialID"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl08_CollapsiblePanelExtender1_ClientState","CollapseControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl08_pnlIconPlus","Collapsed":true,"CollapsedImage":"images/plus.gif","CollapsedText":"Show related records","ExpandControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl08_pnlIconPlus","ExpandedImage":"images/minus.gif","ExpandedText":"Hide related records","ImageControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl08_ImgPlus","SuppressPostBack":true,"id":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl08_CollapsiblePanelExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_GridViewSearch_ctl08_pnlGridTrialID"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl09_CollapsiblePanelExtender1_ClientState","CollapseControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl09_pnlIconPlus","Collapsed":true,"CollapsedImage":"images/plus.gif","CollapsedText":"Show related records","ExpandControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl09_pnlIconPlus","ExpandedImage":"images/minus.gif","ExpandedText":"Hide related records","ImageControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl09_ImgPlus","SuppressPostBack":true,"id":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl09_CollapsiblePanelExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_GridViewSearch_ctl09_pnlGridTrialID"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl10_CollapsiblePanelExtender1_ClientState","CollapseControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl10_pnlIconPlus","Collapsed":true,"CollapsedImage":"images/plus.gif","CollapsedText":"Show related records","ExpandControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl10_pnlIconPlus","ExpandedImage":"images/minus.gif","ExpandedText":"Hide related records","ImageControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl10_ImgPlus","SuppressPostBack":true,"id":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl10_CollapsiblePanelExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_GridViewSearch_ctl10_pnlGridTrialID"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl11_CollapsiblePanelExtender1_ClientState","CollapseControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl11_pnlIconPlus","Collapsed":true,"CollapsedImage":"images/plus.gif","CollapsedText":"Show related records","ExpandControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl11_pnlIconPlus","ExpandedImage":"images/minus.gif","ExpandedText":"Hide related records","ImageControlID":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl11_ImgPlus","SuppressPostBack":true,"id":"ctl00_ContentPlaceHolder1_GridViewSearch_ctl11_CollapsiblePanelExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_GridViewSearch_ctl11_pnlGridTrialID"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

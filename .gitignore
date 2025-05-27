@@ -1,0 +1,145 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a PyInstaller script; a great example is FnordCaptcha (used
+#  in AVManipulationDetect). Look there for outputCompression, PyInstallerSpecDir, currentWorkPath,
+#  exeName, exeNameDir, distPath, buildPath, specPath and randomString.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# PEP 582; __pypackages__ directory
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath stuff
+.sage/
+
+# Env files
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak
+venv.bak
+
+# Spyder project settings
+.spyderproject
+.spyderworkspace
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# environments
+.env
+.venv
+ENV
+
+# Data files (example)
+# data/raw/* (Uncomment if you dont want to commit raw data examples, but keep .gitkeep)
+# external_tools/* (Uncomment if you dont want to commit external tools, but keep .gitkeep)
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Airflow specific
+airflow/logs/
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/unittests.cfg
+airflow/webserver_config.py
+
+# Credentials & Sensitive information
+*.pem
+*.key
+secrets.json
+credentials.json 
