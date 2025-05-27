@@ -12,7 +12,7 @@ jobs:
   deploy-ddl-to-snowflake:
     name: Deploy DDL to Snowflake
     runs-on: ubuntu-latest
-    environment: snowflake_prod # Optional: If you set up GitHub environments for approvals/protection
+    environment: ClinicalTrialsELT # Optional: If you set up GitHub environments for approvals/protection
 
     steps:
       - name: Checkout Repository
