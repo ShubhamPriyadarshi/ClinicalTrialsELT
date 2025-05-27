@@ -44,6 +44,8 @@ jobs:
          echo "Looking for DDL files in ddl/ ..."
           find ddl -name '*.sql' -print0 | sort -z | while IFS= read -r -d $'\0' ddl_file; do
             echo "Executing DDL: $ddl_file"
+            FULL_QUERY="!SET exit_on_error=true; !SET variable_substitution=false; ${QUERY_CONTENTS}"
+
             ~/bin/snowsql \
               -a "$SNOWFLAKE_ACCOUNT" \
               -u "$SNOWFLAKE_USER" \
@@ -51,7 +53,7 @@ jobs:
               -w "$SNOWFLAKE_WAREHOUSE" \
               -d "$SNOWFLAKE_DATABASE" \
               -s "$SNOWFLAKE_SCHEMA" \
-              -q "!USE DATABASE IDENTIFIER('"\"$SNOWFLAKE_DATABASE\""'); !USE SCHEMA IDENTIFIER('"\"$SNOWFLAKE_SCHEMA\""'); !USE ROLE IDENTIFIER('"\"$SNOWFLAKE_ROLE\""'); !USE WAREHOUSE IDENTIFIER('"\"$SNOWFLAKE_WAREHOUSE\""'); $(cat "$ddl_file")" \
+               -q "${FULL_QUERY}" \
               -o exit_on_error=false \
               -o friendly=false \
               -o header=false \
