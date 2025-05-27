@@ -55,7 +55,8 @@ jobs:
               -o friendly=false \
               -o header=false \
               -o output_format=plain \
-              -o timing=true
+              -o timing=true \
+              -o log_level=DEBUG
             if [ $? -ne 0 ]; then
               echo "Error executing $ddl_file. Aborting."
               exit 1
