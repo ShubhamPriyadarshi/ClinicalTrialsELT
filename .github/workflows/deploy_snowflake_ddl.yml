@@ -32,8 +32,7 @@ jobs:
           ./snowsql-1.4.0-linux_x86_64.bash <<INSTALL_CONFIRM
           
           y
-          ~/.snowsql
-INSTALL_CONFIRM
+          ~/.snowsql << INSTALL_CONFIRM
           echo "Adding SnowSQL to PATH"
           echo "$HOME/.snowsql" >> $GITHUB_PATH
           echo "SnowSQL version:"
