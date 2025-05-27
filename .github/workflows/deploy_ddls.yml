@@ -44,7 +44,7 @@ jobs:
             echo "Executing DDL: $ddl_file"
             whereis snowsql
             # Explicitly pass connection parameters. Password from SNOWFLAKE_PASSWORD env var.
-            ~/.snowsql/snowsql \
+            ~/runner/bin/snowsql \
               -a "$SNOWSQL_ACCOUNT" \
               -u "$SNOWSQL_USER" \
               -r "$SNOWSQL_ROLE" \
