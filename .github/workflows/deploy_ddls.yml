@@ -37,7 +37,8 @@ jobs:
         run: |
           curl -O https://sfc-repo.snowflakecomputing.com/snowsql/bootstrap/1.2/linux_x86_64/snowsql-1.2.9-linux_x86_64.bash
           SNOWSQL_DEST=~/bin SNOWSQL_LOGIN_SHELL=~/.profile bash snowsql-1.2.9-linux_x86_64.bash
-      # Runs a single command using the runners shell
+          sudo apt-get install -y openssl libssl-dev
+          # Runs a single command using the runners shell
       - name: Deploy DDLs
         run: |
          echo "Looking for DDL files in ddl/ ..."
