@@ -37,7 +37,7 @@ def load_xml_to_snowflake(file_path, table_name, stage_name="raw_data_stage"):
         cursor.execute(f"USE SCHEMA {SNOWFLAKE_SCHEMA};")
         
         # Create an internal stage if it doesn't exist
-        cursor.execute(f"CREATE STAGE IF NOT EXISTS {stage_name} FILE_FORMAT = (TYPE = XML);")
+        # cursor.execute(f"CREATE STAGE IF NOT EXISTS {stage_name} FILE_FORMAT = (TYPE = XML);")
         
         # Put the file into the stage
         # Note: For local files, Snowflake path requires 'file://' prefix
@@ -47,15 +47,15 @@ def load_xml_to_snowflake(file_path, table_name, stage_name="raw_data_stage"):
         print(f"Executing PUT command: {put_command}")
         cursor.execute(put_command)
         
-        # Create table if not exists (assuming one VARIANT column for raw XML)
-        # Add a load_timestamp column for tracking
-        cursor.execute(f"""
-            CREATE TABLE IF NOT EXISTS {table_name} (
-                raw_data VARIANT,
-                source_file_name VARCHAR,
-                load_timestamp TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
-            );
-        """)
+        # # Create table if not exists (assuming one VARIANT column for raw XML)
+        # # Add a load_timestamp column for tracking
+        # cursor.execute(f"""
+        #     CREATE TABLE IF NOT EXISTS {table_name} (
+        #         raw_data VARIANT,
+        #         source_file_name VARCHAR,
+        #         load_timestamp TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
+        #     );
+        # """)
         
         # Copy data from stage to table
         # The PARSE_XML function can be used here or later in dbt for more complex parsing

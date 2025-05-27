@@ -45,36 +45,36 @@ def get_snowflake_connection():
         print(f"Error connecting to Snowflake: {e}")
         raise
 
-def create_stage_if_not_exists(conn, stage_name):
-    """Creates the Snowflake stage if it doesn't already exist."""
-    print(f"\nEnsuring stage '{stage_name}' exists...")
-    # A basic json file format for the stage, specific format applied during COPY
-    create_stage_command = f"CREATE STAGE IF NOT EXISTS {stage_name} FILE_FORMAT = (TYPE = JSON);"
-    try:
-        with conn.cursor() as cur:
-            cur.execute(create_stage_command)
-        print(f"Stage '{stage_name}' is ready.")
-    except Exception as e:
-        print(f"Error creating or ensuring stage '{stage_name}': {e}")
-        raise
+# def create_stage_if_not_exists(conn, stage_name):
+#     """Creates the Snowflake stage if it doesn't already exist."""
+#     print(f"\nEnsuring stage '{stage_name}' exists...")
+#     # A basic json file format for the stage, specific format applied during COPY
+#     create_stage_command = f"CREATE STAGE IF NOT EXISTS {stage_name} FILE_FORMAT = (TYPE = JSON);"
+#     try:
+#         with conn.cursor() as cur:
+#             cur.execute(create_stage_command)
+#         print(f"Stage '{stage_name}' is ready.")
+#     except Exception as e:
+#         print(f"Error creating or ensuring stage '{stage_name}': {e}")
+#         raise
 
-def create_table_if_not_exists(conn, table_name):
-    """Creates the target Snowflake table if it doesn't already exist."""
-    print(f"\nEnsuring table '{SNOWFLAKE_DATABASE}.{SNOWFLAKE_SCHEMA}.{table_name}' exists...")
-    create_table_command = f"""
-    CREATE TABLE IF NOT EXISTS {SNOWFLAKE_DATABASE}.{SNOWFLAKE_SCHEMA}.{table_name} (
-        FILENAME VARCHAR,
-        JSON_CONTENT VARIANT,
-        LOAD_TIMESTAMP TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
-    );
-    """
-    try:
-        with conn.cursor() as cur:
-            cur.execute(create_table_command)
-        print(f"Table '{table_name}' is ready.")
-    except Exception as e:
-        print(f"Error creating or ensuring table '{table_name}': {e}")
-        raise
+# def create_table_if_not_exists(conn, table_name):
+#     """Creates the target Snowflake table if it doesn't already exist."""
+#     print(f"\nEnsuring table '{SNOWFLAKE_DATABASE}.{SNOWFLAKE_SCHEMA}.{table_name}' exists...")
+#     create_table_command = f"""
+#     CREATE TABLE IF NOT EXISTS {SNOWFLAKE_DATABASE}.{SNOWFLAKE_SCHEMA}.{table_name} (
+#         FILENAME VARCHAR,
+#         JSON_CONTENT VARIANT,
+#         LOAD_TIMESTAMP TIMESTAMP_NTZ DEFAULT CURRENT_TIMESTAMP()
+#     );
+#     """
+#     try:
+#         with conn.cursor() as cur:
+#             cur.execute(create_table_command)
+#         print(f"Table '{table_name}' is ready.")
+#     except Exception as e:
+#         print(f"Error creating or ensuring table '{table_name}': {e}")
+#         raise
 
 def stage_local_json_files(conn, local_dir, stage_name):
     """Uploads all json files from a local directory to a Snowflake internal stage."""
